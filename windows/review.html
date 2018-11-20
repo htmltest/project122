@@ -1,0 +1,89 @@
+<div class="window-record">
+    <h2>Оставить отзыв<br /> или предложение</h2>
+    <form action="windows/thanksreview.html" method="post" class="ajax-form">
+        <div class="record-row">
+            <div class="record-field record-field-full">
+                <div class="form-input"><input type="text" name="name" value="" placeholder="Ваше имя" class="required" /></div>
+            </div>
+            <div class="record-field record-field-full">
+                <div class="rate-title">Оцените качество обслуживания по 5-балльной шкале:</div>
+                <div class="rate">
+                    <input type="radio" name="radio" value="5" id="rate5" />
+                    <label for="rate5"></label>
+                    <input type="radio" name="radio" value="4" id="rate4" />
+                    <label for="rate4"></label>
+                    <input type="radio" name="radio" value="3" id="rate3" />
+                    <label for="rate3"></label>
+                    <input type="radio" name="radio" value="2" id="rate2" />
+                    <label for="rate2"></label>
+                    <input type="radio" name="radio" value="1" id="rate1" />
+                    <label for="rate1"></label>
+                </div>
+            </div>
+            <div class="window-review-contacts window-review-contacts-2">
+                <div class="window-review-contacts-fields">
+                    <div class="record-field record-field-full">
+                        <div class="form-select">
+                            <select name="doctor" data-placeholder="Лечащий врач">
+                                <option value=""></option>
+                                <option value="1">Стоматов Александр Владимирович</option>
+                                <option value="2">Стоматов Дмитрий Владимирович</option>
+                                <option value="3">Стоматова Наталья Николаевна</option>
+                                <option value="4">Уразгильдеева Асия Ринатовна</option>
+                                <option value="5">Уразгильдеева Асия Ринатовна</option>
+                                <option value="6">Костоматов Владимир Владимирович</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="record-field record-field-full">
+                        <div class="form-select">
+                            <select name="service" data-placeholder="Оказанная услуга">
+                                <option value=""></option>
+                                <option value="1">Лечение</option>
+                                <option value="2">Протезирование</option>
+                                <option value="3">Исправление прикуса</option>
+                                <option value="4">Отбеливание зубов</option>
+                                <option value="5">Имплантация</option>
+                                <option value="6">Профилактика</option>
+                                <option value="7">Гигиена полости рта</option>
+                                <option value="8">Лечение беременных</option>
+                                <option value="9">Рентген-диагностика</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="window-review-contacts-text">При желании вы можете указать вашего врача и услугу, о&nbsp;которой вы пишите отзыв</div>
+            </div>
+            <div class="record-field record-field-full">
+                <div class="form-input"><textarea name="message" rows="5" cols="10" placeholder="Ваше сообщение" class="required"></textarea></div>
+            </div>
+            <div class="window-review-contacts">
+                <div class="window-review-contacts-fields">
+                    <div class="record-field record-field-full">
+                        <div class="form-input"><input type="text" name="phone" value="" placeholder="Ваш телефон" class="maskPhone" /></div>
+                    </div>
+                    <div class="record-field record-field-full">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Электронная почта" class="email" /></div>
+                    </div>
+                </div>
+                <div class="window-review-contacts-text">Ваши контакты нужны, чтобы помочь вам в&nbsp;случае проблемы.<br /> Они не будут показаны на сайте.</div>
+            </div>
+            <div class="record-field record-field-full">
+                <div class="form-files">
+                    <div class="form-file">
+                        <div class="form-file-input"><svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.36916 16.3695C7.24784 18.4908 3.71231 18.4908 1.59099 16.3695C-0.53033 14.2482 -0.53033 10.7127 1.59099 8.59135L9.01561 1.16673C10.5712 -0.388909 13.1168 -0.388909 14.6725 1.16673C16.2281 2.72236 16.2281 5.26795 14.6725 6.82358L8.66206 12.834C7.67211 13.8239 6.11647 13.8239 5.12652 12.834C4.13657 11.844 4.13657 10.2884 5.12652 9.29845L10.4298 3.99515L11.4905 5.05581L6.18718 10.3591C5.76292 10.7834 5.76292 11.3491 6.18718 11.7733C6.61145 12.1976 7.17713 12.1976 7.6014 11.7733L13.6118 5.76292C14.6018 4.77297 14.6018 3.21734 13.6118 2.22739C12.6219 1.23744 11.0662 1.23744 10.0763 2.22739L2.65165 9.65201C1.09602 11.2076 1.09602 13.7532 2.65165 15.3089C4.20729 16.8645 6.75287 16.8645 8.30851 15.3089L15.026 8.59135L16.0867 9.65201L9.36916 16.3695Z" /></svg>Прикрепить фото<input type="file" name="files[]" /></div>
+                        <div class="form-file-name"><div class="form-file-name-text"></div><div class="form-file-name-remove"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="record-row">
+            <div class="record-field">
+                <button class="btn-2" type="submit">Отправить</button>
+            </div>
+            <div class="record-field">
+                <div class="record-policy">Нажимая на кнопку, вы даете <a href="soglasie.html">согласие</a> на&nbsp;обработку персональных данных и принимаете политику конфиденциальности</div>
+            </div>
+        </div>
+    </form>
+</div>
