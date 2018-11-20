@@ -18,7 +18,7 @@ $(document).ready(function() {
     }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         $('.slider-text-inner li.active').removeClass('active');
         $('.slider-text-inner li').eq(nextSlide).addClass('active');
-    });;
+    });
 
     $('.next-link').click(function(e) {
         $('html, body').animate({'scrollTop': $(this).offset().top + $(this).height()});
@@ -268,6 +268,15 @@ $(document).ready(function() {
                 e.preventDefault();
             }
         }
+    });
+
+    $('.news-other-list').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow: '<button type="button" class="slick-prev"><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 0L0 10L10 20L10 0Z" /></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L10 10L0 20L0 0Z" /></svg></button>'
     });
 
 });
